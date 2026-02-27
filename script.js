@@ -70,7 +70,7 @@ function cellClicked(cell, row, col) {
             document.getElementById("message").innerHTML = "⚠️ That Seat is Already Empty";
 
         }else{
-            document.getElementById("message").innerHTML = `Removed ${input} from row ${row}, seat ${col}`;
+            document.getElementById("message").innerHTML = `Removed ${cell.innerHTML} from row ${row}, seat ${col}`;
             cell.innerHTML = ''
              names[row][col] = ""
             filledSeats--;
@@ -110,4 +110,5 @@ function updateStats(){
 
     // currentMode = 'assign'
     // drawChart();
+
 }
